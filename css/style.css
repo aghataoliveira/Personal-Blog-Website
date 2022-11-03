@@ -1,0 +1,98 @@
+body {
+    font-family: "League Spartan", sans-serif;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 23px;
+    letter-spacing: 0.8px;
+    line-height: 32px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 26px;
+}
+.sticky-header{
+    overflow: hidden;
+    background-color: #222;
+    position: fixed;
+
+    width: 100%;
+
+}
+.main-nav{
+    background-color: #222;
+    font-family: "League Spartan", sans-serif;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.navbar {
+    font-family: "League Spartan", sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a{
+    margin: 15px;
+    color: rgb(249, 242, 222);
+}
+
+.navbar :hover{
+    color: rgb(178, 131, 3);
+    text-decoration: underline;
+}
+
+.subscribe a{
+    background-color: #222;
+    color: rgb(249, 242, 222);
+    margin: 10px;
+    padding: 15px;
+}
+
+
+/* styling social icons */
+/* Style all font awesome icons */
+.fa {
+    text-align: center;
+    font-size: 20px;
+    color: #222;
+    width: 50px;
+    background-color: rgb(178, 131, 3);
+    border-radius: 50px;
+    padding: 5px 0;
+}
+
+/* articles */
+.post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(34, 34, 34, 0.142);
+    margin: 35px 0;
+    padding: 40px 0;
+    margin-left: 55px;
+}
+
+.continue-reading{
+    margin: 10px;
+    padding: 10px;
+    border: solid rgba(198, 158, 16, 0.865);
+    margin-top: 10px;
+    font-weight: 600;
+    border-radius: 50px;
+
+}
