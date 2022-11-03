@@ -3,13 +3,61 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Personal Blog Website</title>
+    <title>Aghata Oliveira Blog</title>
     <meta name="description" content="Example" />
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
 <body>
-    <p>Hello World!</p>
+    <div class="sticky-header">
+        <div class="sticky-header__container">
+            <nav class="sticky-header__main-nav">
+                <ul>
+                    <li><a href="" class="pl-0">Home</a></li>
+                    <!-- using the modifiers -->
+                    <li><a href="" class="active sticky-header__main-navsticky-header__main-nav--blog">Blog</a></li>
+                    <li>
+                        <a href="">Shop</a>
+                        <ul class="subnav">
+                            <li><a href="">Baked Goods</a></li>
+                            <li><a href="">Furniture</a></li>
+                            <li><a href="">Home Accessories</a></li>
+                            <li><a href="">Sale Items</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="social-icons">
+                <a rel="nofollow" target="_blank" href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a rel="nofollow" target="_blank" href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a rel="nofollow" target="_blank" href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+<main>
+
+
+
+
+
+    
+    <nav id="pagination">
+        <ul>
+            <li><a href="" class="active">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">></a></li>
+        </ul>
+    </nav>
+</main>
+
+<footer class="pt-50 pb-50">
+    <div class="container">
+        &copy; 2019
+    </div>
+</footer>
 </body>
 
 </html>
