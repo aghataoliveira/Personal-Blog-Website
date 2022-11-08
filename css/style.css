@@ -1,124 +1,109 @@
-body{
+body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url('../images/blog-background.jpg');
 }
 
-img{
+img {
     max-width: 100%;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
-h1{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 60px;
-    font-weight: 900;
+h1 {
+    color: rgb(61, 59, 59);
+    font-size: 50px;
     display: flex;
     justify-content: center;
 }
 
-h2{
+h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 32px;
-    font-weight: 500;
+    font-size: 22px;
+    color: rgb(30, 86, 37);
 }
 
-h3{
+h3 {
     font-size: 12px;
     font-weight: 200;
 }
-.blogName{
+
+.blogName {
     margin: 50px 0;
-    color: rgb(45, 9, 72);
+    color: rgb(2, 84, 30);
 }
 
-/* grid for the whole page */
+/* flex for mobile */
 .container {
-    /* Step 1: Set display to grid */
-    display: grid;
-    /* Step 2: setup rows amd columns */
-    /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-columns: 300px 300px 300px 200px;
-    grid-template-rows: 50px 850px 50px;
-    grid-template-areas:
-        "hd hd hd hd hd hd hd hd"
-        "main main main main main main main main"
-        "ft ft ft ft ft ft ft ft";
-    border: 2px solid rgb(0, 255, 153);
-    grid-gap: 5px;
+    /* Step 1: Set display to flex to make it mobile first */
+    display: flex;
+    flex-direction: column;
 }
 
 .box {
-    /* width: 250px;
-    height: 150px; */
-    border: 1px solid rgb(250, 50, 50);
+    /* border: 1px solid rgb(38, 0, 255); */
     background: #ffffff;
 }
 
-.header {
-    /* row start/column start/ row end/ column end */
-    grid-area: hd;
-    background: #cfefb2;
-}
-
 .footer {
-    grid-area: ft;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #8c8e8b;
 }
 
-.sidebar {
-    grid-area: sd;
-}
-
 .content {
-    grid-area: main;
-}
-
-.social {
-    grid-area: sc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../images/blog-background.jpg');
+    background-size: cover;
 }
 
 
 /* grid for the posts */
-.contentContainer{
+.contentContainer {
     display: flex;
-    flex-direction: row;
-    margin: 90px 50px;
+    flex-direction: column;
 }
 
-.blogPosts{
-    margin: 0 10px;
-    padding: 10px;
-    background-color: #8c8e8b55;
-    border: 3px solid #ffffff55;
-    border-radius: 5%;
+.blogPosts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+    background-color: #3e483955;
+    border: 1px solid #8c8e8b55;
+    border-radius: 2%;
     box-shadow: #000000;
 }
 
-#postName{
+#postName {
     display: flex;
     justify-content: center;
     margin: 10px;
 }
-/* navbar */
-body {
-    margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+.postLink{
+    text-decoration: underline;
+    color: brown;
 }
+
+/* navbar */
 
 .topnav {
     overflow: hidden;
-    background-color: rgb(49, 37, 37);
+    background-color: rgb(59, 59, 59);
 }
 
 .topnav a {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 20px;
     text-decoration: none;
     font-size: 17px;
 }
@@ -131,4 +116,77 @@ body {
 .topnav a.active {
     background-color: #ffffff;
     color: rgb(9, 5, 5);
+}
+
+/* ------------------------------------Design for bigger screens---------------------------------------------- */
+@media(min-width:900px) {
+
+    body {
+        /* Hide scrollbars */
+        overflow: hidden;
+    }
+
+    /* grid for the whole page */
+    .container {
+        /* Step 1: Set display to grid */
+        display: grid;
+        /* Step 2: setup rows amd columns */
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-columns: 480px 480px 480px 480px;
+        grid-template-rows: 50px 980px 50px;
+        grid-template-areas:
+            "hd hd hd hd hd hd hd hd"
+            "main main main main main main main main"
+            "ft ft ft ft ft ft ft ft";
+        /* border: 2px solid rgb(0, 255, 153); */
+        grid-gap: 5px;
+    }
+
+    .box {
+        /* width: 250px;
+        height: 150px; */
+        background: #ffffff;
+    }
+
+    .header {
+        /* row start/column start/ row end/ column end */
+        grid-area: hd;
+        /* background: #cfefb2; */
+    }
+
+    .footer {
+        grid-area: ft;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #8c8e8b;
+    }
+
+    .content {
+        grid-area: main;
+        background-image: url('../images/blog-background.jpg');
+        background-size: cover;
+    }
+
+    /* grid for the posts */
+    .contentContainer {
+        display: flex;
+        flex-direction: row;
+        margin: 90px 50px;
+    }
+
+    .blogPosts {
+        margin: 0 10px;
+        padding: 10px;
+        background-color: #8c8e8b55;
+        border: 1px solid #8c8e8b55;
+        border-radius: 5%;
+        box-shadow: #000000;
+    }
+
+    #postName {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
 }
