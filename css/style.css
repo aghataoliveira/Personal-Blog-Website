@@ -132,4 +132,35 @@ h3 {
 /* ------------------------------------Design for bigger screens---------------------------------------------- */
 @media(min-width:900px) {
 
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.02fr 1fr 0.02fr;
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd"
+        "main main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+        border: 2px solid rgb(43, 0, 255);
+    }
+    .box{
+        border: 1px solid white;
+        border: 2px solid rgb(255, 102, 0);
+        }
+    .header{
+        grid-area:hd;
+    }
+    .footer{
+        grid-area:ft;
+    }
+    .content{
+        grid-area:main;
+    }
+
+    .contentContainer{
+        display: flex;
+        flex-direction: row;
+
+    }
+
+
 }
