@@ -128,6 +128,21 @@ h3 {
     background-color: #ffffff;
     color: rgb(9, 5, 5);
 }
+/* ------------------------------------Design for intermediate screens---------------------------------------------- */
+@media (min-width: 600px) and (max-width:900px) {
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: coral;
+        background-blend-mode: color-burn;
+        background-image: url('../images/blog-background.jpg');
+        background-size: cover;
+    }
+
+}
+
 
 /* ------------------------------------Design for bigger screens---------------------------------------------- */
 @media(min-width:900px) {

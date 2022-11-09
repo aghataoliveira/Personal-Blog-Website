@@ -119,6 +119,14 @@ p {
     margin: 15px;
 }
 
+.gabyCanada{
+    background-image: url(../images/the-decision.jpg);
+    color: #ddd;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+    padding: 2%;
+}
+
 /* ------------------------------------Design for bigger screens---------------------------------------------- */
 @media(min-width:900px) {
     .content{
