@@ -81,7 +81,7 @@ h3 {
     background-color: #3e483955;
     border: 1px solid #8c8e8b55;
     border-radius: 2%;
-    box-shadow: #000000;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 #postName {
@@ -98,7 +98,6 @@ h3 {
     font-variant: small-caps;
     font-weight: 600;
     background-color: rgba(25, 27, 25, 0.333);
-    /* border: 1px solid rgb(0, 0, 0); */
     border-radius: 5px;
     text-decoration: none;
 }
