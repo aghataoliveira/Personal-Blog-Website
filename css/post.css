@@ -1,105 +1,58 @@
-body{
+body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-image: url('../images/blog-background.jpg');
-    overflow: hidden; /* Hide scrollbars */
 }
 
-img{
+img {
     max-width: 100%;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
-h1{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 60px;
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
     font-weight: 900;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
-h2{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+h2 {
     font-size: 32px;
     font-weight: 500;
 }
 
-h3{
+h3 {
     font-size: 12px;
     font-weight: 200;
 }
 
-
-.container {
-    /* Step 1: Set display to grid */
-    display: grid;
-    /* Step 2: setup rows amd columns */
-    /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-columns: 480px;
-    grid-template-rows: 50px 980px 50px;
-    grid-template-areas:
-        "hd hd hd hd hd hd hd hd"
-        "main main main main main main main main"
-        "ft ft ft ft sc sc sc sc";
-    /* border: 2px solid rgb(0, 255, 153); */
-    grid-gap: 5px;
+p {
+    font-family: verdana, sans-serif;
+    font-size: 16px;
+    margin: 15px;
+    content: " ¶ ";
+    text-indent: 3ch;
+    letter-spacing: 0.5px;
+    line-height: 22px;
 }
 
-.box {
-    /* width: 250px;
-    height: 150px; */
-    background: #ffffff;
-}
-
-.header {
-    /* row start/column start/ row end/ column end */
-    grid-area: hd;
-    /* background: #cfefb2; */
-}
-
-.footer {
-    grid-area: ft;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #8c8e8b;
-}
-
-.sidebar {
-    grid-area: sd;
-}
-
-.content {
-    grid-area: main;
-    background-image: url('../images/blog-background.jpg');
-    background-size: cover;
-}
-
-.social {
-    grid-area: sc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #8c8e8b;
+.theDecision {
+    border-radius: 10px;
 }
 
 /* navbar */
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(59, 59, 59);
 }
 
 .topnav a {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 20px;
     text-decoration: none;
     font-size: 17px;
 }
@@ -110,6 +63,58 @@ body {
 }
 
 .topnav a.active {
-    background-color: #234f92;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(9, 5, 5);
 }
+
+/* container flex for mobile first */
+/* Step 1: Set display to flex to make it mobile first */
+.container {
+    display: flex;
+    flex-direction: column;
+    
+}
+.content{
+    background-color: #f2f2f2b4;
+    margin: 0 5%;
+    padding: 2%;
+    border-radius: 20px;
+}
+.container2{
+    color: #ddd;
+    background-color: brown;
+    margin-top: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.authorPhoto{
+    width: 400px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(85, 85, 85);
+}
+
+.pageName {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    font-size: 25px;
+}
+
+.social a{
+    background-color: #f2f2f2;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+/* ------------------------------------Design for bigger screens---------------------------------------------- */
+@media(min-width:900px) {}
