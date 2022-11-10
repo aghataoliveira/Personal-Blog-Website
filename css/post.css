@@ -86,15 +86,27 @@ p {
 
 /* ------------------------------------Design for bigger screens---------------------------------------------- */
 @media(min-width:900px) {
+    .container2{
+        color: #ddd;
+        background-color: brown;
+        margin-top: 15px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 15%;
+    }
     .content{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 0 15%;
+        background-color: #f2f2f2;
     }
-
-    p{
-        padding: 0 25%;
+    .container{
+        background-color: #f2f2f2;
     }
 
 }
