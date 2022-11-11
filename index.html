@@ -2,9 +2,13 @@
 <html lang="en">
 
 <head>
+    <!-- Udacity Style Guide instruction says:
+        "Encoding Use UTF-8 (no BOM).
+        Make sure your editor uses UTF-8 as character encoding, without a byte order mark. Specify the encoding in HTML templates and documents with <meta charset="utf-8">." -->
     <meta charset="utf-8" />
+    <!-- page title this will be displayed in the tab name -->
     <title>Aghata Oliveira Blog</title>
-    <meta name="description" content="Example" />
+    <!-- viewport Inital Scale Meta tag - to make it mobile friendly -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- RESET CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
@@ -16,18 +20,21 @@
 
 <body>
     <div class="container">
+        <!-- Nav bar goes here -->
         <div class="header box">
             <div class="topnav">
                 <a class="active" href="index.html">Home</a>
                 <a href="post.html">Blog Posts</a>
             </div>
         </div>
+        <!-- blog Name goes here -->
         <div class="content box">
             <div class="blogName">
                 <h1>
                     Aghata's Blog
                 </h1>
             </div>
+            <!-- creating the blog posts to display on the home page -->
             <div class="contentContainer">
                 <section class="blogPosts">
                     <h2 id="postName">The Decision</h2>
@@ -50,7 +57,8 @@
                             <img src="./images/the-plan.jpg" alt="phone, computer, and pecils over a planner">
                         </a>
                         <h3>Plan to make it happen</h3>
-                        <p><em>The decision</em> seemed so simple when it came to the plan. Our plan had three main categories,
+                        <p><em>The decision</em> seemed so simple when it came to the plan. Our plan had three main
+                            categories,
                             they...
                         </p>
                         <a class="button" href="#">keep reading</a>
@@ -70,6 +78,7 @@
                 </section>
             </div>
         </div>
+        <!-- footer with copyright -->
         <div class="footer box"> ©Aghata 2022</div>
     </div>
 </body>

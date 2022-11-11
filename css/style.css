@@ -1,6 +1,10 @@
+/* Importing top nav */
 @import url(topnav.css);
+/* core CSS for body, img and a */
 @import url(core.css);
+/* css for footer */
 @import url(footer.css);
+
 /* ------------------------MOBILE FIRST------------------------ */
 
 h1 {
